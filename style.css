@@ -1,0 +1,82 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 220px;
+    height: 460px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.timer-section {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.timer-section h1 {
+    font-size: 42px;
+}
+
+.settings {
+    height: 50%;
+    padding: 10px;
+}
+
+.time-setting {
+    margin: 12px 0;
+}
+
+.time-setting h3 {
+    margin: 5px;
+}
+
+button {
+    border: none;
+    padding: 7px 12px;
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.time-setting button {
+    background: #3498db;
+    color: white;
+}
+
+.controls {
+    margin-top: 18px;
+}
+
+#start {
+    background: #2ecc71;
+    color: white;
+}
+
+#reset {
+    background: #e74c3c;
+    color: white;
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
